@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Arangu 2k15</title>
+  <meta name="description" content="Angularjs, Html5, Music, Landing, 4 in 1 ui kits package" />
+  <meta name="keywords" content="AngularJS, angular, bootstrap, admin, dashboard, panel, app, charts, components,flat, responsive, layout, kit, ui, route, web, app, widgets" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+   
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Include the plugin *after* the jQuery library -->
+<script src="js/bjqs-1.3.js"></script>
+
+<!-- Include the basic styles -->
+<link type="text/css" rel="Stylesheet" href="css/bjqs.css" />
+		
+
+</head>
+<body>
+<div class="app app-header-fixed  app-aside-fixed ">
+  
+  <!-- header -->
+  <header id="header" class="app-header navbar" role="menu">
+          <!-- navbar header -->
+      <div class="navbar-header bg-dark">
+        <button class="pull-right visible-xs dk" ui-toggle="show" target=".navbar-collapse">
+          <i class="glyphicon glyphicon-cog"></i>
+        </button>
+        <button class="pull-right visible-xs" ui-toggle="off-screen" target=".app-aside" ui-scroll="app">
+          <i class="glyphicon glyphicon-align-justify"></i>
+        </button>
+        <!-- brand -->
+        <a href="#/" class="navbar-brand text-lt">
+          
+          
+          <span class="hidden-folded m-l-xs" >Arangu 2k15</span>
+        </a>
+        <!-- / brand -->
+      </div>
+      <!-- / navbar header -->
+
+      <!-- navbar collapse -->
+      <div class="collapse pos-rlt navbar-collapse box-shadow bg-warning">
+        <!-- buttons -->
+        <div class="nav navbar-nav hidden-xs">
+          <a href="#" class="btn no-shadow navbar-btn" ui-toggle="app-aside-folded" target=".app">
+		  
+           <div class="text-primary-dk "> <div id="radio">Fisat Radio Updates</div></div> 
+          </a>
+          <a href="#" class="btn no-shadow navbar-btn" ui-toggle="show" target="#aside-user">
+            
+          </a>
+        </div>
+        <!-- / buttons -->
+
+
+      </div>
+      <!-- / navbar collapse -->
+  </header>
+  <!-- / header -->
+<aside id="aside" class="app-aside hidden-xs bg-dark">
+  <div class="aside-wrap bg-dark">
+        <div class="navi-wrap">
+          <!-- user -->
+          <div class="clearfix hidden-xs text-center hide" id="aside-user">
+            <div class="dropdown wrapper">
+              <a href="app.page.profile">
+                <span class="thumb-lg w-auto-folded avatar m-t-sm">
+                  <img src="img/a0.jpg" class="img-full" alt="...">
+                </span>
+              </a>
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded">
+                <span class="clear">
+                  <span class="block m-t-sm">
+                    <strong class="font-bold text-lt">John.Smith</strong> 
+                    <b class="caret"></b>
+                  </span>
+                  <span class="text-muted text-xs block">Art Director</span>
+                </span>
+              </a>
+              <!-- dropdown -->
+              <ul class="dropdown-menu animated fadeInRight w hidden-folded">
+                <li class="wrapper b-b m-b-sm bg-info m-t-n-xs">
+                  <span class="arrow top hidden-folded arrow-info"></span>
+                  <div>
+                    <p>300mb of 500mb used</p>
+                  </div>
+                  <div class="progress progress-xs m-b-none dker">
+                    <div class="progress-bar bg-white" data-toggle="tooltip" data-original-title="50%" style="width: 50%"></div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">Settings</a>
+                </li>
+                <li>
+                  <a href="page_profile.html">Profile</a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="badge bg-danger pull-right">3</span>
+                    Notifications
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="page_signin.html">Logout</a>
+                </li>
+              </ul>
+              <!-- / dropdown -->
+            </div>
+            <div class="line dk hidden-folded"></div>
+          </div>
+          <!-- / user -->
+
+          <!-- nav -->
+          
+          <!-- nav -->
+
+          <!-- aside footer -->
+          <div class="wrapper m-t ">
+            <div class="text-center-folded">
+              <span class="pull-right pull-none-folded">Auditorium</span>
+              <span class="hidden-folded"><h3>Stage 1</h3></span>
+			 
+            </div>
+			 
+            <div class="progress progress-xxs m-t-sm dk">
+              <div class="progress-bar progress-bar-info" style="width: 100%;">
+              </div>
+            </div>
+			<div class="m-b" >
+              <div class="m-b" id="stage1now">
+             
+              </div>
+              <div class="m-b" id="stage1next">
+                
+              </div>
+              
+            </div>
+            <div class="text-center-folded">
+              <span class="pull-right pull-none-folded">Semiar hall</span>
+              <span class="hidden-folded"><h3>Stage 2</h3></span>
+            </div>
+            <div class="progress progress-xxs m-t-sm dk">
+              <div class="progress-bar progress-bar-primary" style="width: 100%;">
+              </div>
+            </div>
+			<div class=" m-b" >
+              <div class="m-b" id="stage2now">
+                
+              </div>
+              <div class="m-b" id="stage2next">
+                
+              </div>
+              
+            </div>
+			<div class="text-center-folded">
+              <span class="pull-right pull-none-folded">MBA seminar</span>
+              <span class="hidden-folded"><h3>Stage 3</h3></span>
+            </div>
+            <div class="progress progress-xxs m-t-sm dk">
+              <div class="progress-bar progress-bar-primary" style="width: 100%;">
+              </div>
+            </div>
+			<div class=" m-b" >
+              <div class="m-b" id="stage3now">
+                
+              </div>
+              <div class="m-b" id="stage3next">
+                
+              </div>
+              
+            </div>
+			<div class="text-center-folded">
+              <span class="pull-right pull-none-folded">Quarter Angle</span>
+              <span class="hidden-folded"><h3>Stage 4</h3></span>
+            </div>
+            <div class="progress progress-xxs m-t-sm dk">
+              <div class="progress-bar progress-bar-primary" style="width: 100%;">
+              </div>
+            </div>
+			<div class=" m-b">
+              <div class="m-b" id="stage4now">
+                
+              </div>
+              <div class="m-b" id="stage4next">
+              
+              </div>
+              </div>
+            </div>
+          
+          <!-- / aside footer -->
+        </div>
+      </div>
+	  </aside>
+  
+  <!-- content -->
+  <div id="content" class="app-content" role="main">
+    <div class="app-content-body  app-content-full">
+      
+
+<!-- hbox layout -->
+<div class="hbox hbox-auto-xs bg-light " ng-init="
+  app.settings.asideFolded = true; 
+  app.settings.asideFixed = true;
+  app.settings.asideDock = false;
+  app.settings.container = false;
+  app.hideAside = false
+  ">
+  <!-- column -->
+  <div class="col w lter b-r" ng-controller="CustomTabController">
+    <div class="vbox">
+      <div class="wrapper  bg-danger b-b">
+        <span class="text-white font-thin h1 block">Notifications</span>
+		
+      </div>
+	  <marquee width="100%" direction="up" scrolldelay="130">
+      <ul class="list-group" id="not1">
+          
+		</ul>
+		</marquee>
+      <div class="row-row">
+        <div class="cell scrollable hover">
+          <div class="cell-inner">
+            <div class="tab-content">
+              <div class="tab-pane" ng-class="{'active': tabs[0]}">
+                <div class="wrapper-md">
+                  This is the scrollable content, hover to show the scrollbar
+                  <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+                  You got the bottom
+                </div>
+              </div>
+              <div class="tab-pane" ng-class="{'active': tabs[1]}">
+                <div class="wrapper-md">
+                  Month report
+                </div>
+              </div>
+              <div class="tab-pane" ng-class="{'active': tabs[2]}">
+                <div class="wrapper-md">
+                  Year report
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /column -->
+
+  <!-- column -->
+  <div class="col">
+       <div class="wrapper b-b bg-dark b-light">
+     <span class="text-white  font-thin h1 block">Moments Of Arangu </span>
+      </div>
+      <div class="row-row">
+        <div class="cell">
+          <div class="cell-inner">
+            <div class="wrapper-md bg-info">
+             <img src="img/arangu.jpg" width="100%" height="500px" >
+			
+
+			
+			 </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- /column -->
+
+  <!-- column -->
+  <div class="col w-md lter b-l">
+ <div class="wrapper b-b bg-primary b-light">
+     <span class="text-white  font-thin h1 block">Results</span>
+      </div>
+  
+      <div class="row-row">
+        <div class="cell">
+          <div class="cell-inner">
+            <div class="wrapper-md" >
+			
+			<marquee direction="up" id="results" width="100%" scrolldelay="130">
+			
+			</marquee>
+              
+              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- /column -->
+</div>
+<!-- /hbox layout -->
+
+
+    </div>
+  </div>
+  <!-- / content -->
+
+  <!-- footer -->
+  <footer id="footer" class="app-footer" role="footer">
+       <div class="r bg-light dker item hbox no-border">
+                
+                <div class="col dk padder-v r-r">
+				
+                  <div class="text-primary-dk font-thin h1" ><span> <marquee id="message"> </marquee></span></div>
+                  <span class="text-muted text-xs">Whatsapp ur message to 9123456789</span>
+                </div>
+              </div>
+  </footer>
+  <!-- / footer -->
+  <!DOCTYPE html>
+<html>
+<head>
+<script>
+window.setInterval(function(){
+  updatenotify();
+  
+}, 5000);
+
+
+
+function updatenotify() {
+if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+			xmlhttp1 = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var myArr = JSON.parse(xmlhttp.responseText);
+				document.getElementById("not1").innerHTML =myArr[0];
+				document.getElementById("stage1now").innerHTML =myArr[1];
+				document.getElementById("stage2now").innerHTML =myArr[2];
+				document.getElementById("stage3now").innerHTML =myArr[3];
+				document.getElementById("stage4now").innerHTML =myArr[4];
+				document.getElementById("stage1next").innerHTML =myArr[5];
+				document.getElementById("stage2next").innerHTML =myArr[6];
+				document.getElementById("stage3next").innerHTML =myArr[7];
+				document.getElementById("stage4next").innerHTML =myArr[8];
+				document.getElementById("message").innerHTML =myArr[9];
+				document.getElementById("radio").innerHTML =myArr[10];
+				document.getElementById("results").innerHTML =myArr[11];
+				
+            }
+        }
+        xmlhttp.open("GET","notify.php",true);
+        xmlhttp.send();
+		
+    }
+
+
+
+
+</script>
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/ui-load.js"></script>
+<script src="js/ui-jp.config.js"></script>
+<script src="js/ui-jp.js"></script>
+<script src="js/ui-nav.js"></script>
+<script src="js/ui-toggle.js"></script>
+<script src="js/jquery.cslider.js"></script>
+<script src="js/modernizr.custom.28468.js"></script>
+
+</body>
+</html>
