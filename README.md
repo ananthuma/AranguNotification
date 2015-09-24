@@ -9,4 +9,4 @@ This program is developed during the Fisat arts fest-2015. This Project contains
 					5.Open http://localhost/admin/ for admin panel,login with above created details
 					6.Open http://localhost/frontend/ for Notice board in Client.
 ##Contributors
-Anil,Kurian Joseph,Ananthakrishnan MA,Anand J 
+Anil,Kurian Joseph,Ananthakrishnan MA,Anand J ,Angitha Das
