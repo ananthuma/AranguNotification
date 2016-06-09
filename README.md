@@ -1,4 +1,4 @@
-# Arts Fest Notice Board With admin panel and frontend
+# Arts-fest Notice board with admin panel and frontend
 This program is developed during the Fisat arts fest-2015. This Project contains both backend(admin) and frontend(client) system.This project is done entirely on PHP.
 ##Steps For Installation
 					1.Create a DB
